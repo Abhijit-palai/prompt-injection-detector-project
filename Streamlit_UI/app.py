@@ -16,8 +16,12 @@ import pandas as pd
 import streamlit as st
 
 
-MODEL_PATH = Path(r"C:\Users\ASUS\OneDrive\Pictures\Desktop\coding world\Deep Learning in Tensorflow\DL_campusx\Projects_DL\Prompt_injection_detector_NLP\Model\jailbreak_detector.joblib")
-INFO_PATH = Path(r"C:\Users\ASUS\OneDrive\Pictures\Desktop\coding world\Deep Learning in Tensorflow\DL_campusx\Projects_DL\Prompt_injection_detector_NLP\Model\model_info.json")
+from pathlib import Path
+
+APP_DIR = Path(__file__).parent
+MODEL_DIR = APP_DIR.parent / "Model"
+MODEL_PATH = MODEL_DIR / "jailbreak_detector.joblib"
+INFO_PATH = MODEL_DIR / "model_info.json"
 MAX_CHARS = 5000
 
 EXAMPLES = {
