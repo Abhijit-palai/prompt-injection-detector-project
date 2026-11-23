@@ -1,0 +1,12 @@
+{
+  "model": "CountVectorizer + LogisticRegression",
+  "labels": {
+    "0": "benign",
+    "1": "jailbreak"
+  },
+  "threshold": 0.5,
+  "dataset": "rogue-security/prompt-injections-benchmark (5,000 prompts)",
+  "split": "80/20 stratified, random_state=42",
+  "test_auc": 0.9274,
+  "sklearn_version": "1.6.1"
+}
