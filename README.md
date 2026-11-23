@@ -4,8 +4,9 @@ A machine learning project that reads a chatbot prompt and predicts whether it i
 
 Prompt injection means tricking a chatbot with instructions like "ignore all previous instructions...". Detecting these prompts is one small layer of protection for AI applications.
 
-## Demo
+## Live Demo
 
+[Click here to view the Streamlit App](https://prompt-injection-detector-project-98psrtd8ewh4cngdhxtcwp.streamlit.app/)
 
 The app shows the jailbreak probability, a decision threshold you can change, and the prompt with each word shaded by how strongly it pushed the result (red toward jailbreak, teal toward benign).
 
